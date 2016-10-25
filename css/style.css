@@ -162,6 +162,7 @@ ul {
 	line-height:53px;
 }
 
+
 #line {
 	background-color: black;
 	height: 5px;
@@ -372,3 +373,11 @@ p {
 	line-height: 10px;
 }
 
+svg {
+	width:7%;
+}
+
+a svg:hover {
+	fill: #ff4d4d;
+	text-decoration: none;
+}
