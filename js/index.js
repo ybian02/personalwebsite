@@ -1,4 +1,4 @@
-var words = ['multidisciplinary designer','digital media enthusiast','natural story teller','aspiring interaction designer','rational optimist','social justice nerd'],
+var words = ['interaction designer','digital media enthusiast','natural story teller','rational optimist','social justice nerd'],
     currentStep = 0,
     textEl = document.querySelector('.change-text'),
     oldWord = '';
