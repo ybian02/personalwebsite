@@ -4,9 +4,10 @@ body {
 	margin:0;
 }
 
+
 .navbar {
 	font-family: 'PT Sans', sans-serif;
-	font-size: 20px;
+	font-size: 1.5em;
 	line-height: 1.2;
 	letter-spacing: 0.04em;
 	text-align: left;
@@ -50,7 +51,7 @@ span {display:none;}
 	padding-right: 0;
 	padding-left: 0;
 	color: black;
-	font-size: 64px;
+	font-size: 4.8em;
 	font-weight: 700;
 	line-height: 1.1;
 	height: 100vh;
@@ -143,10 +144,10 @@ blockquote {
 	line-height: 30px;
 	border-left: none;
 	margin-left: 0;
-	padding-left:0;
-	padding-right:0;
+	padding-left:15px;
+	padding-right:15px;
 	padding-bottom: 0;
-	padding-top: 4%;
+	padding-top:50px;
 }
 
 /*
@@ -196,7 +197,7 @@ ul {
 	background-color: black;
 	height: 4px;
 	width: 200px;
-	padding-left: 0px;
+	margin-left: 15px;
 }
 
 
@@ -220,10 +221,10 @@ ul {
 	margin: 0 0 0 0;
 }
 
-.col-md-3{
+/*.col-md-3{
 	padding: 0 0 0 0;
 	margin: 0 0 0 0;
-}
+}*/
 
 .col-md-6{
 	padding: 0 0 0 0;
