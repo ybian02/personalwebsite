@@ -57,6 +57,24 @@ span {display:none;}
 	height: 100vh;
 }
 
+/*@media all and (max-device-width: 720px){
+    .intro {
+        font-size: 100%;
+    }
+}
+
+@media all and (max-device-width: 640px){
+    .intro {
+        font-size: 80%;
+    }
+}
+
+@media all and (max-device-width: 320px){
+    .intro {
+        font-size: 60%;
+    }
+}*/
+
 .intro-about{
 	font-family: 'PT Serif', serif;
 	color: black;
@@ -240,12 +258,12 @@ ul {
 
 #left {
 	padding-right: 3%;
-	padding-left: 0;
+	padding-left: 3%;
 }
 
 #right {
 	padding-left: 3%;
-	padding-right: 0;
+	padding-right: 3%;
 }
 
 .projectthumb {
