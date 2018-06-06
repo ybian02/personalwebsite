@@ -1,2 +1,2 @@
-# personalwebsite
-This is a web portfolio designed and coded by Lynette Bian.
+# Web-Design-Final
+Final Project for Web Design 2 Class
