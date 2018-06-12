@@ -630,8 +630,8 @@ a svg:hover {
 
 @media all and (max-width: 320px){
     h1.bigtitle {
-        font-size: 15px;
-        line-height: 20px;
+        font-size: 21px;
+        line-height: 28px;
         padding-top: 10px;
     }
 }
@@ -671,4 +671,12 @@ a svg:hover {
     .intro-about {
         font-size: 30px;
     }
+}
+
+@media all and (max-width: 640px){
+    .close-button {
+        display: none;
+    }
+}
+
 }
