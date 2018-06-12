@@ -651,7 +651,7 @@ a svg:hover {
 
 @media all and (max-width: 320px){
     h1.intro {
-        font-size: 20px;
+        font-size: 30px;
     }
 }
 
@@ -669,6 +669,6 @@ a svg:hover {
 
 @media all and (max-width: 320px){
     .intro-about {
-        font-size: 15px;
+        font-size: 30px;
     }
 }
