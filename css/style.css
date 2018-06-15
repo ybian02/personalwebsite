@@ -2,32 +2,73 @@
 
 body {
 	margin:0;
+	position: relative;
 }
 
 
-.navbar {
-	font-family: 'PT Sans', sans-serif;
+.bar{
+/*	font-family: 'PT Sans', sans-serif;
 	font-size: 16px;
 	line-height: 1.2;
 	letter-spacing: 0.04em;
-	text-align: left;
-	padding-top: 4%;
     padding-bottom: 18px;
-/*    padding-left: 6%;*/
 	display: flex;
 	flex-direction: row;
-	align-items: flex-start;
-/*    position: fixed;
+	align-items: flex-end;
+    position: fixed;
     top:0;
     background-color: white;
-    z-index: 1;*/
-/*    width: 100%;*/
-/*    border: none;
-    border-radius: 0;*/
+    z-index: 1;
+    width: 100%;
+    border: none;
+    border-radius: 0;
+*/
+	  position: fixed;
+	  left: 0;
+	  top: 0;
+	  width: 100%;
+	  background: white;
+	  font-family: 'PT Sans', sans-serif;
+	  font-size: 16px;
+	  line-height: 1.2em;
+	  transform: translateY(0);
+	  transform: translate3d(0,0,0);
+	  transition-delay:0.1s;
+	  transition-duration:0.3s;
+/*	  transition: .25s transform;*/
+	  backface-visibility: hidden;
+	  height: 6rem;
+	  z-index: 1;
 }
 
-.nav-space-left {
-    padding-left: 4%;
+.navbar {
+	padding-left: 0;
+	padding-top: 35px;
+}
+
+.heads-up {
+  transform: translateY(-6rem);
+  transform: translate3d(0,-6rem,0);
+}
+
+.navbar-nav {
+	display: flex;
+	justify-content: flex-end;
+	padding-top: 0;
+}
+
+.navbar-nav li {
+	font-family: 'PT Sans', sans-serif;
+	font-size: 16px;
+	line-height: 1.2em;
+}
+
+.navbar-expand-lg .navbar-collapse {
+	justify-content: flex-end;
+}
+
+button {
+	float: right;
 }
 
 .padding-left {
@@ -37,7 +78,6 @@ body {
 .padding-right{
     padding-right: 25px; 
 }
-
 
 a {
 	color:black;
@@ -115,19 +155,16 @@ a.link_underline_sm:active {
     display: inline-block;
 }
 
-span {display:none;}
-.hover_img a:hover span { display:block; }
-.hover_img a { position:relative; }
-.hover_img a span { position:absolute; display:none; z-index:0; }
-
 
 h1.intro{
 	font-family: 'PT Serif', serif;
 	color: black;
 	font-weight: 400;
-	font-size:52px;
+	font-size:45px;
 	line-height: 1.2em;
-	padding-top: 15vh;
+	padding-top: 25vh;
+/*	padding-left: 100px;
+	padding-right: 100px;*/
 }
 
 
@@ -251,7 +288,7 @@ p {
 .list {
 	font-family: 'PT Sans', sans-serif;
 	font-weight: 400;
-	font-size: 1.0em;
+	font-size: 14px;
 	line-height: 1.5em;
 /*	color: #7f7f7f;*/
 }
@@ -628,7 +665,7 @@ a svg:hover {
 
 @media all and (max-width: 991px){
     h1.intro {
-        font-size: 60px;
+        font-size: 45px;
     }
   	.intro-about {
         font-size: 40px;
@@ -690,6 +727,7 @@ a svg:hover {
 @media all and (max-width: 411px){
     h1.intro {
         font-size: 30px;
+        padding-bottom: 5vh;
     }
     .intro-about {
         font-size: 20px;

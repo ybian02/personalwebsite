@@ -24,13 +24,17 @@
  	<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
 
 	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 
 	<!-- jQuery library -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
 	<!-- Latest compiled JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
@@ -54,176 +58,368 @@
 
 <!-- <body style="background-color: #F2F6F9"> -->
 
-<body>
+<body data-spy="scroll" data-target=".navbar-nav">
+
 
 	<div class="container-fluid">
-		<div class="row padding-left padding-right">
-				<div class="col-md-1"> </div>
-				<div class="col-md-10">
-				<div class="navbar">
-					<div> Lynette Bian </div>
-					<a class="nav-space-left" href=""> About </a> 
-					<a class="scroll nav-space-left" href="portfolio.html"> Portfolio </a>
-				</div>
-				</div>
+		<div class="row padding-left padding-right bar">
+			<div class="col-md-1"> </div>
+				
+			<div class="col-md-10">
+				<nav class="navbar navbar-expand-lg navbar-light navbar-fixed-top">
+				  <a href="#" style="padding-top: 8px; padding-bottom: 8px;">Lynette Bian </a>
+				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				    <span class="navbar-toggler-icon"></span>
+				  </button>
+				  
+				  <div class="collapse navbar-collapse" id="navbarNavAltMarkup" style="float: right;">
+				   <ul class="navbar-nav">
+				   		<li> <a class="nav-item nav-link active scroll" href="#about">About <span class="sr-only">(current)</span></a> </li>
+				   		<li> <a class="nav-item nav-link" href="#portfolio">Portfolio</a> </li>
+				        <li> <a class="nav-item nav-link" href="images/Lynette Bian Resume.pdf">Resume</a> </li>
+				    </ul>
+				  </div>
+				</nav>
+			</div>
+			<div class="col-md-1"> </div>
 		</div>
 	</div>
 
+<!-- ****ABOUT**** -->
+<div class="container-fluid" id="about">
 
-<div class="container-fluid">
+		<!-- title -->
+		<div class="row padding-left padding-right">
+			<div class="col-md-1"> </div>
+				<div class="col-md-10">
+					<h1 class="intro"> I’m Lynette, a digital product designer based in San Francisco. </h1> 
+					<!-- <span> <a class="link_underline_sm scroll" href="#more">Read More</a> </span>  -->
+				</div>
+			<div class="col-md-1"> </div>
+		</div>
 
-<!-- title -->
-	<div class="row padding-left padding-right">
-		<div class="col-md-1"> </div>
-			<div class="col-md-10">
-				<h1 class="intro"> I’m Lynette, a digital product designer based in San Francisco. </h1> <span> <a class="link_underline_sm scroll" href="#more">Read More</a> </span> 
-			</div>
-		<div class="col-md-1"> </div>
-	</div>
 
+		<!-- photo -->
+		<div class="row">
+				<div class="col-md-12" style="z-index: -1; position: static; margin-top: -50px;"> 
+					<img src="images/bg.jpg"  class="img-fluid" alt="background image">
+				</div>
+		</div>
 
-<!-- photo -->
-	<div class="row">
-			<div class="col-md-12" style="z-index: -1;"> 
-				<img  class="img-responsive" src="images/bg.jpg">
-			</div>
-	</div>
+		<!-- intro section -->
+		<div class="row padding-left padding-right space-bottom" id="more" style="padding-top:10vh; padding-bottom: 5vh;">
 
-<!-- intro section -->
-	<div class="row padding-left padding-right space-bottom" id="more" style="padding-top:10vh; padding-bottom: 5vh;">
-		<div class="col-md-1"> </div>
-		<div class="col-md-5">
-					<h1 class="bigtitle space-bottom"> I am an interaction designer, an analytical thinker and an urban normad. </h1>
+			<div class="col-md-1"> </div>
+
+			<div class="col-md-5">
+				<h1 class="bigtitle space-bottom"> I am an interaction designer, an analytical thinker and an urban normad. </h1>
 					<h3 class="space-bottom"> I love the process of translating product strategy and consumer insights into digital experiences for all. I have innovated alongside researchers and designers at <a class="link_underline_sm" href="https://www.continuuminnovation.com/en/" target="_blank">Continuum</a> to make the future real, worked on Design Systems at <a class="link_underline_sm" href="https://vmware.github.io/clarity/" target="_blank"> VMware </a>, organized and led the design effort for <a class="link_underline_sm" href="http://2017.polyhack.tufts.io/" target="_blank">Polyhack </a> at Tufts, and founded <a class="link_underline_sm" href="http://beanandco.co/" target="_blank"> a design studio </a> with three other friends. I will be joining VMware as a Product Designer in July, 2018.
 					<br/><br/>
 					I spent five years commuting between <a class="link_underline_sm" href="http://admissions.tufts.edu/academics/special-degree-paths/combined-degree-with-the-schoo/" target="_blank">Tufts and SMFA</a> to pursue my degrees in Studio Art and International Relations. I also spent six months abroad studying Interaction Design at <a class="link_underline_sm" href="http://www.arts.ac.uk/csm/courses/study-abroad/integrated-study-abroad/" target="_blank">Central Saint Martins</a>, London. The constant moves and changes in my life turned me into a bit of an urban normad. I have lived in three different continents and five cities, and the list continues to grow. Currently, I am excited to explore the Bay Area and soak in some Vitamin D.
 					<br/><br/>
 					</h3>
+				</div>
+
+				<div class="col-md-1"> </div>
+
+				<div class="col-md-4 space-top space-bottom" style="padding-top:15px;"> 
+					
+					<!-- activities section -->
+					<h5 class="space-top space-bottom"> &nbsp;In the Design Industry - </h5>
+				
+					<div class="list">&nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp;&nbsp;SF Design Week | June 2018 - <i>Volunteer</i>
+					</div>
+
+					<div class="list">&nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp;&nbsp;MIT Hacking Arts | November 2017 - <i>Attendee</i>
+					</div>
+				
+					<div class="list">&nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp;&nbsp;Tufts Polyhack | October 2017 - <i>Organizer</i>
+					</div>
+
+					<div class="list">&nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp;&nbsp;Twitter Terning the Table | August 2017 - <i>Attendee</i>
+					</div>
+
+					<div class="list">&nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp;&nbsp;Boston UXPA Conference | March 2017 - <i>Attendee</i>
+					</div>
+
+					<div class="list">&nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp;&nbsp;Tufts Polyhack | October 2016 - <i>Design Mentor</i>
+					</div>
+
+					<div class="list">&nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp;&nbsp;CSM Graphic Design Year 2 Show | April 2016 - <i>Participant</i>
+					</div>
+
+					<!-- writings section -->
+					<div class="space-top space-bottom"> 
+					
+					<h5 class="space-top space-bottom">&nbsp;Writings - </h5>
+					
+					<div class="list">&nbsp;
+						<i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp;&nbsp;
+						<a class="link_underline_sm" href="https://medium.com/@yuchunbian/why-did-i-choose-a-dual-degree-program-9940da4727bc" target="_blank">Why Dual-Degree Program? </a>
+					</div>
+
+					<div class="list"> &nbsp;
+						<i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp;&nbsp;
+
+						<a class="link_underline_sm" href="https://medium.com/@yuchunbian/https-medium-com-yuchunbian-the-story-of-bean-co-5fdd151cc997" target="_blank"> The Story of Bean+Co</a>
+					</div>
+					</div>
+
+			</div>
+			<div class="col-md-1"> </div>	
+		</div>
+
+		<!-- concluson/CTA -->
+<!-- 		<div class="row padding-left padding-right space-bottom space-top" style="padding-top: 50px;">
+			<div class="col-md-1"> </div>
+			<div class="col-md-10"> 
+				<h1 class="bigtitle"> 
+					I'm always excited to connect with creative minds out there. If you would like to chat, <a href="mailto:yuchun.bian@gmail.com"" class="link_underline" target="_blank">drop me a line</a>.
+				</h1>
 			</div>
 			<div class="col-md-1"> </div>
-			<div class="col-md-4 space-top space-bottom" style="padding-top:15px;"> 
-			<h5 class="space-top space-bottom"> &nbsp;In the Design Industry - </h5>
-			
-			<div class="list">&nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp;&nbsp;MIT Hacking Arts | November 2017 - <i>Attendee</i>
-			</div>
-			
-			<div class="list">&nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp;&nbsp;Tufts Polyhack | October 2017 - <i>Organizer</i>
-			</div>
-
-			<!-- <a href="http://2017.polyhack.tufts.io/" target="_blank">  -->
-
-			<div class="list">&nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp;&nbsp;Twitter Terning the Table | August 2017 - <i>Attendee</i>
-			</div>
-
-			<div class="list">&nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp;&nbsp;Boston UXPA Conference | March 2017 - <i>Attendee</i>
-			</div>
-
-			<div class="list">&nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp;&nbsp;Tufts Polyhack | October 2016 - <i>Design Mentor</i>
-			</div>
-
-			<div class="list">&nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp;&nbsp;CSM Graphic Design Year 2 Show | April 2016 - <i>Participant</i>
-			</div>
-
-			<div class="list">&nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp;&nbsp;Tufts Polyhack | October 2015 - <i>Attendee</i>
-			</div>
-
-			<div class="space-top space-bottom"> 
-			<h5 class="space-top space-bottom"> &nbsp;Writings - </h5>
-			
-			<div class="list"> &nbsp;
-				<i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp;&nbsp;
-				<a class="link_underline_sm" href="https://medium.com/@yuchunbian/why-did-i-choose-a-dual-degree-program-9940da4727bc" target="_blank"> Why Dual-Degree Program? </a>
-			</div>
-
-			<div class="list"> &nbsp;
-				<i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp;&nbsp;
-
-				<a class="link_underline_sm" href="https://medium.com/@yuchunbian/https-medium-com-yuchunbian-the-story-of-bean-co-5fdd151cc997" target="_blank"> The Story of Bean+Co</a>
-			</div>
 		</div>
 
+		<div style="background-color:#F2F2F2; padding-top: 50px; padding-bottom: 100px; z-index: -1; margin: -117px 0 25px 0;">
+		</div> -->	
+</div>
+<!-- ****end of ABOUT**** -->
+
+<!-- ****PORTFOLIO**** -->
+
+<div class="container-fluid" id="portfolio" style="padding-top: 100px;">
+	<div class="main_project">
+		<div class="row padding-left padding-right" >
+				<div class="col-md-1"> </div>
+				<div class="col-md-10"> 
+					<h1 class="bigtitle"> 
+						Clarity Web Builder is the first sample application using <a href="https://vmware.github.io/clarity/" class="link_underline" target="_blank"> Clarity Design System </a>
+					</h1>
+				</div>
+				<div class="col-md-1"> </div>
 		</div>
-		<div class="col-md-1"> </div>	
+
+		<div class="row space-bottom">
+			<div class="col-md-8"> 
+					<a href="p2/clarity.html">
+					<image src="images/p1-design/vmware.jpg" class="space-top img-fluid" alt="clarity logo"> </image>
+					</a>
+			</div>	
+
+			<div class="col-md-3 padding-small"> 
+					<h2 class="space-top"> Clarity Web Builder </h2> 
+					<h3 class="tag"> UI/UX | Research </h3>
+					<h3 class="space-top"> In the summer of 2017, I worked as a UI/UX design intern on Project Clarity at VMware. I designed Clarity Web Builder, which creates web pages that follow Clarity design guidelines. In a span of eight weeks, I conducted user research, compiled competitive analysis, went through design iterations, designed and conducted user testing sessions. The project will be one of the first Sample apps for the Clarity Design System. </h3>
+					<a class="link_underline_sm space-top" href="p2/clarity.html"> Go to project</a>
+			</div>
+			</div>
+	</div>
+	
+
+
+	<div class="main_project">
+		<div class="row padding-left padding-right space-top">
+				<div class="col-md-1"> </div>
+				<div class="col-md-10">
+					<h1 class="bigtitle"> 
+						Improve the MBTA information dispersal system for passengers with hard of hearing
+					</h1>
+				</div>
+				<div class="col-md-1"> </div>
+		</div>
+
+		<div class="row space-bottom">
+
+			<div class="col-md-8"> 
+					<a href="p2/MBTA.html">
+					<image src="images/p1-design/MBTA0.jpg" class="space-top img-fluid" alt="app mock screen"> </image>
+					</a>
+			</div>	
+
+			<div class="col-md-3 padding-small"> 
+					<h2 class="space-top"> MBTA Information<br>Dispersal System </h2> 
+					<h3 class="tag"> UI/UX | Research | Accessibility </h3>
+					<h3 class="space-top"> Commissioned by Massachusetts Bay Transportation Authority, I worked with a team of five to create an iOS application user interface that is aimed at assisting all passengers with MBTA navigation and communication, but with a particular focus on passengers from both the deaf and hard of hearing communities. This is a project for a course at Tufts, Human Factors in Product Design.</h3>
+					<a class="link_underline_sm space-top" href="p2/MBTA.html"> Go to project</a>
+			</div>
+		</div>
 	</div>
 
-<!-- content -->
-	<div class="row padding-left padding-right space-bottom space-top" style="padding-top: 50px;">
+	<div class="main_project">
+		<div class="row padding-left padding-right space-top">
+				<div class="col-md-1"> </div>
+				<div class="col-md-10">
+					<h1 class="bigtitle"> 
+						Design a friendly healthcare app that doesn't turn users away
+					</h1> 
+				</div>
+				<div class="col-md-1"> </div>
+		</div>
+
+		<div class="row space-bottom">
+
+			<div class="col-md-8">  
+					<a href="p2/gain-life.html">
+					<image src="images/p1-design/gainlife2.jpg" class="space-top img-fluid" alt="desktop mockup"> </image>
+					</a>
+			</div>	
+
+			<div class="col-md-3 padding-small"> 
+					<h2 class="space-top"> ManUp Interface Design </h2> 
+					<h3 class="tag"> UI/UX | Visual Design </h3>
+					<h3 class="space-top"> I worked as a UI/UX Designer for a healthcare startup that aims to empower guys to achieve their best in life through improved health. The 16-week long program requires users to complete 6 different weekly tasks alongside 2 other optional actions. My responsibility was to create user flow and interface designs that ensure users will complete the tasks without being too demanding. </h3>
+					<a class="space-top link_underline_sm" href="p2/gain-life.html"> Go to project</a>
+			</div>
+		</div>
+	</div>
+
+	</div>
+</div>
+<!-- Other Works -->
+
+	<div class="row padding-left padding-right space-bottom">
 		<div class="col-md-1"> </div>
 		<div class="col-md-10"> 
-			<h1 class="bigtitle"> 
-				I'm always excited to connect with creative minds out there. If you would like to chat, <a href="mailto:yuchun.bian@gmail.com"" class="link_underline" target="_blank">drop me a line</a>.
-			</h1>
+				<h1 class="bigtitle"> 
+					Other projects involve analogue artworks, website design, and experimental projects.
+				</h1>
 		</div>
 		<div class="col-md-1"> </div>
 	</div>
 
-		<!-- <div class="col-md-1"> </div> -->
-<!-- 		<div class="col-md-5 space-top space-bottom"> 
-			<h5 class="space-top space-bottom"> &nbsp;In the Design Industry - </h5>
-			
-			<div class="list">&nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp;&nbsp;MIT Hacking Arts | November 2017 - <i>Attendee</i>
-			</div>
-			
-			<div class="list">&nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp;&nbsp;Tufts Polyhack | October 2017 - <i>Organizer</i>
-			</div>
-
-			<div class="list">&nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp;&nbsp;Twitter Terning the Table | August 2017 - <i>Attendee</i>
-			</div>
-
-			<div class="list">&nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp;&nbsp;Boston UXPA Conference | March 2017 - <i>Attendee</i>
-			</div>
-
-			<div class="list">&nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp;&nbsp;Tufts Polyhack | October 2016 - <i>Design Mentor</i>
-			</div>
-
-			<div class="list">&nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp;&nbsp;CSM Graphic Design Year 2 Show | April 2016 - <i>Participant</i>
-			</div>
-
-			<div class="list">&nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp;&nbsp;Tufts Polyhack | October 2015 - <i>Attendee</i>
-			</div>
-
-		</div> -->
-
-<!-- 		<div class="col-md-5 space-top space-bottom"> 
-			<h5 class="space-top space-bottom"> &nbsp;Writings - </h5>
-			
-			<div class="list"> &nbsp;
-				<i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp;&nbsp;
-				<a class="link_underline_sm" href="https://medium.com/@yuchunbian/why-did-i-choose-a-dual-degree-program-9940da4727bc" target="_blank"> Why Dual-Degree Program? </a>
-			</div>
-
-			<div class="list"> &nbsp;
-				<i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp;&nbsp;
-
-				<a class="link_underline_sm" href="https://medium.com/@yuchunbian/https-medium-com-yuchunbian-the-story-of-bean-co-5fdd151cc997" target="_blank"> The Story of Bean+Co</a>
-			</div>
-		</div> -->
-	<div style="background-color:#F2F2F2; padding-top: 50px; padding-bottom: 100px; z-index: -1; margin: -117px 0 25px 0;">
-	</div>	
-
-<!-- footer -->
-
-	<div class="row padding-left padding-right space-bottom" style="padding-top: 100px;">
+<div id="grey_bg">
+	<div class="row padding-left padding-right space-bottom space-top">
 		<div class="col-md-1"> </div>
-		<div class="col-md-10">
+		<div class="col-md-5 space-bottom"> 
+			<a href="p2/reframing-fear.html">
+				<image src="images/p1-design/Reframingfear.jpg" class="space-bottom img-fluid" alt="poster" /> 
+			</a>
+                <div class="col-md-8">
+				    <h2 class="space-top"> Reframing Fear </h2> 
+                    <h3 class="tag"> Print | Experimental </h3>
+				    <h3 class="space-top"> I explored how people could view the same matter in two perspectives in the form of a screenprinted poster with a zig-zag fold. The design shows how we might reframe fear into a source of love and courage. </h3>
+                <a class="link_underline_sm space-top margin-bottom" href="p2/reframing-fear.html"> Go to project </a>
+			</div>
+        </div>
+        <div class="col-md-1"> </div>
+        <div class="col-md-4">
+			<a href="p2/subway-people.html">
+				<div class="gif__item" data-gif-trigger>
+					<figure>
+						<image src="images/p1-design/Subway-People.jpg" class="space-bottom img-fluid" alt="image of book"> 
+						</image>
+					</figure>
+				</div>
+			</a>
+			<div class="col-md-10">
+				<h2 class="space-top"> Subway People </h2> 
+		 		<h3 class="tag"> Print | Illustration </h3>
+		 		<h3 class="space-top"> This illustrations series is a product of my interest in people watching. Starting in the summer of 2014, I captured passengers in subways in Shanghai, Boston and New York to document my commute. I have launched an illustration book of the series. The second books is currently in the making. </h3>
+		 		<a class="link_underline_sm space-top" href="p2/subway-people.html">Go to project</a>
+		 	</div>
+        </div>
+        <div class="col-md-1"> </div>
+    </div>
 
-		<a href="mailto:yuchun.bian@gmail.com" id="navbar" class="fa fa-envelope-o" style="font-size:20px" target="_blank"> 
-		</a>
+    <div class="row padding-left padding-right space-top space-bottom">
+       	<div class="col-md-1"> </div>
+        <div class="col-md-4"> 
+               <a href="http://beanandco.co/" target="_blank">
+      					<img class="space-bottom img-fluid" src="images/p1-design/Bean0.gif" alt="Bean and co website">
+    			</a>
+				<div class="col-md-8">
+				<h2 class="space-top"> Bean + Co </h2>
+				<h3 class="tag"> Art Direction | Website Design </h3>
+				<h3 class="space-top"> Bean and Co is an online agency covering the latest projects in photography, design and tech. As one of the founding members, I created the branding guideline for Bean + Co and designed the website for the agency. Aligned with our mission to make brilliant ideas soar and collaborate with clients, the Bean + Co brand is passionate, friendly and bold. </h3>
+				<a class="link_underline_sm space-top margin-bottom" href="http://beanandco.co/" target="_blank"> Check out website</a>
+				</div>
+         </div>
+         <div class="col-md-1"> </div>
+        
+<!--         <div class="col-md-4 padding-small"> 
+			<div class="projectthumb"> 
+				<a class="projectimage space-bottom" href="p2/heartbook.html"> <image src="images/p1-design/heartbook.jpg" class="img-responsive"> </image> 
+				<h2 class="space-top"> Heartbook </h2> </a>
+				<h3 class="tag"> Branding | Illustration </h3> 
+			</div>
+        </div> -->
 
-		<a href="https://twitter.com/yuchunbian" id="navbar" class="fa fa-twitter" style="font-size:20px" target="_blank"> 
-		</a>
+        <div class="col-md-5"> 
+               <a href="http://ybian02.github.io/get2moodle/" target="_blank">
+      					<img class="space-bottom img-fluid" src="images/p1-design/get-to-moddle-static.gif" alt="Get to moddle image">
+    			</a>
+    			<div class="col-md-10">
+				<h2 class="space-top"> Get to Moodle </h2>
+				<h3 class="tag"> Art Direction | Website Design </h3>
+				<h3 class="space-top"> In response to a brief to design a way-finding system, I created a game that web design principles by directing users from Google to Moodle, an educational management website in the UK. Throughout this journey, users have to rely on their instincts to get to the next step since all text has been obscured. The project intends to remind people the invisible principles in interaction design by forcing them to evaluate their importance in the absence of text. </h3>
+				<a class="link_underline_sm space-top" href="http://ybian02.github.io/get2moodle/" target="_blank"> Play the game </a>
+				</div>
+         </div>
+         <div class="col-md-1"> </div>
 
-		<a href="https://www.linkedin.com/in/yuchunbian" id="navbar" class="fa fa-linkedin" style="font-size:20px" target="_blank"> 
-		</a>
+<!--   <div class="col-md-4 padding-small"> 
+			<div class="projectthumb"> 
+				<a class="projectimage" href="p2/adopt-a-kiosk.html">
+				<image src="images/p1-design/adopt-a-kiosk.gif" class="img-responsive"> </image>
+				<h2 class="space-top"> Adopt a Kiosk </h2>
+				</a>
+				<h3 class="tag"> Illustration | Print | Website Design  </h3>
+			</div>
+        </div> -->
 
-		<a href="https://github.com/ybian02" id="navbar" class="fa fa-github" style="font-size:20px" target="_blank"> 
-		</a>
+    </div>
+    
+    <div class="row padding-left padding-right space-top space-bottom" style="padding-top: 50px;">
+    	<div class="col-md-1"> </div>
+		 <div class="col-md-6"> 
+				<a href="p2/fast-food-company.html">
+				<image src="images/p1-design/Forever-Fast-Food-Company.jpg" class="img-fluid" alt="poster and Installation"> </image>
+				</a>
+          </div>
+          <div class="col-md-4 flexible-padding">
+            <h2> Forever Fast Food Company </h2>
+            <h3 class="tag"> Creative Direction | Installation </h3>
+            <h3 class="space-top"> As an advocate for sustainable fashion, I explored the consequences of fast fashion in this project. I found abandoned clothes that were perfect wearable in a discard bin and disguised them into meal packages from a fast food chain. The analogy between fast fashion and fast food is intended to remind viewers of the ethical and environmental consequences of fast fashion consumption.</h3>
+		 	<a class="link_underline_sm space-top" href="p2/fast-food-company.html">Go to project</a>
+          </div>
+          <div class="col-md-1"> </div>
+    </div>
+ </div>
 
-		<a href="https://medium.com/@yuchunbian" id="navbar" class="fa fa-medium" style="font-size:20px" target="_blank"> 
-		</a>
-		</div>
-		<div class="col-md-1"> </div>
+
+    <div class="row padding-left padding-right space-bottom" style="padding-bottom: 50px;">
+      	<div class="col-md-1"> </div>
+      	<div class="col-md-10"> 
+            <h1 class="bigtitle"> 
+				Thank you for reading. If you would like to discuss more, share feedback or ask any questions, please <a href="mailto:yuchun.bian@gmail.com"" class="link_underline" target="_blank"> get in touch </a>.
+            </h1>
+	   	</div>
+	   <div class="col-md-1"> </div>
 	</div>
+
+		<!-- footer -->
+
+		<div class="row padding-left padding-right space-bottom" style="padding-top: 100px;">
+			<div class="col-md-1"> </div>
+			<div class="col-md-10">
+
+			<a href="mailto:yuchun.bian@gmail.com" id="navbar" class="fa fa-envelope-o" style="font-size:20px" target="_blank"> 
+			</a>
+
+			<a href="https://twitter.com/yuchunbian" id="navbar" class="fa fa-twitter" style="font-size:20px" target="_blank"> 
+			</a>
+
+			<a href="https://www.linkedin.com/in/yuchunbian" id="navbar" class="fa fa-linkedin" style="font-size:20px" target="_blank"> 
+			</a>
+
+			<a href="https://github.com/ybian02" id="navbar" class="fa fa-github" style="font-size:20px" target="_blank"> 
+			</a>
+
+			<a href="https://medium.com/@yuchunbian" id="navbar" class="fa fa-medium" style="font-size:20px" target="_blank"> 
+			</a>
+			</div>
+			<div class="col-md-1"> </div>
+		</div>
 
 		<div class="row padding-left padding-right space-bottom">
 			<div class="col-md-1"> </div>
@@ -232,23 +428,157 @@
 			</div>
 			<div class="col-md-1"> </div>
 		</div>
-	</div>
+
 </div>
+
 
 <script>
 
-function scrollNav() {
-  $('.navbar a').click(function(){  
+// function scrollNav() {
+//   $('.navbar-nav a').click(function(){  
 
-    //Animate
-    $('html, body').stop().animate({
-        scrollTop: $( $(this).attr('href') ).offset().top - 60
-    }, 600);
-    return false;
-  });
-  $('.scrollTop a').scrollTop();
-}
-scrollNav();
+//     //Animate
+//     $('html, body').stop().animate({
+//         scrollTop: $( $(this).attr('href') ).offset().top - 60
+//     }, 600);
+//     return false;
+//   });
+//   $('.scrollTop a').scrollTop();
+// }
+// scrollNav();
+
+
+/*
+* HeadsUp 1.5.6
+* @author Kyle Foster (@hkfoster)
+* @license MIT
+*/
+;(function( window, document, undefined ) {
+
+  'use strict';
+
+  // Extend function
+  function extend( a, b ) {
+    for( var key in b ) {
+      if( b.hasOwnProperty( key ) ) {
+        a[ key ] = b[ key ];
+      }
+    }
+    return a;
+  }
+
+  // Throttle function (https://bit.ly/1eJxOqL)
+  function throttle( fn, threshhold, scope ) {
+    threshhold || ( threshhold = 250 );
+    var previous, deferTimer;
+    return function () {
+      var context = scope || this,
+          current = Date.now(),
+          args    = arguments;
+      if ( previous && current < previous + threshhold ) {
+        clearTimeout( deferTimer );
+        deferTimer = setTimeout( function () {
+        previous   = current;
+        fn.apply( context, args );
+        }, threshhold );
+      } else {
+        previous = current;
+        fn.apply( context, args );
+      }
+    };
+  }
+
+  // Class management functions
+  function classReg( className ) {
+    return new RegExp( '(^|\\s+)' + className + '(\\s+|$)' );
+  }
+
+  function hasClass( el, cl ) {
+    return classReg( cl ).test( el.className );
+  }
+
+  function addClass( el, cl ) {
+    if ( !hasClass( el, cl ) ) {
+      el.className = el.className + ' ' + cl;
+    }
+  }
+
+  function removeClass( el, cl ) {
+    el.className = el.className.replace( classReg( cl ), ' ' );
+  }
+
+  // Main function definition
+  function headsUp( selector, options ) {
+    this.selector = document.querySelector( selector );
+    this.options  = extend( this.defaults, options );
+    this.init();
+  }
+
+  // Overridable defaults
+  headsUp.prototype = {
+    defaults : {
+      delay       : 300,
+      sensitivity : 20
+    },
+
+    // Init function
+    init : function( selector ) {
+
+      var self         = this,
+          options      = self.options,
+          selector     = self.selector,
+          oldScrollY   = 0, 
+          winHeight;
+
+      // Resize handler function
+      function resizeHandler() {
+        winHeight = window.innerHeight;
+        return winHeight;
+      }
+
+      // Scroll handler function
+      function scrollHandler() {
+
+        // Scoped variables
+        var newScrollY = window.pageYOffset,
+            docHeight  = document.body.scrollHeight,
+            pastDelay  = newScrollY > options.delay,
+            goingDown  = newScrollY > oldScrollY,
+            fastEnough = newScrollY < oldScrollY - options.sensitivity,
+            rockBottom = newScrollY < 0 || newScrollY + winHeight >= docHeight;
+
+        // Where the magic happens
+        if ( pastDelay && goingDown ) {
+          addClass( selector, 'heads-up' );
+        } else if ( !goingDown && fastEnough && !rockBottom || !pastDelay ) {
+          removeClass( selector, 'heads-up' );
+        }
+
+        // Keep on keeping on
+        oldScrollY = newScrollY;
+      }
+
+      // Attach listeners
+      if ( selector ) {
+        
+        // Trigger initial resize
+        resizeHandler();
+
+        // Resize function listener
+        window.addEventListener( 'resize', throttle( resizeHandler ), false );
+
+        // Scroll function listener
+        window.addEventListener( 'scroll', throttle( scrollHandler, 100 ), false );
+      }
+    }
+  };
+
+  window.headsUp = headsUp;
+
+})( window, document );
+
+// Instantiate HeadsUp
+new headsUp( '.bar' );
 </script>
 
 <script src="../js/index.js"> </script>
